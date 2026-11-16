@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090a0b">
+<title>LCN Platinum — Премии</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--gold:#d4b477;--gold2:#f0d8a2;--bg:#090a0b;--panel:#121416;--muted:#a8a39a;--line:#ffffff18}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#f5f0e7;font-family:Manrope,Arial,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E")}
+header{position:relative;z-index:2;border-bottom:1px solid var(--line);padding:20px 7%;display:flex;justify-content:space-between;align-items:center;background:#090a0beF}
+.brand{font:700 19px Cinzel,serif;letter-spacing:3px;color:var(--gold)}.brand small{display:block;font:600 9px Manrope,sans-serif;letter-spacing:4px;color:#aaa;margin-top:4px}
+.top-label{font-size:10px;letter-spacing:3px;color:#aaa;text-transform:uppercase}
+.hero{padding:80px 7% 54px;text-align:center;background:radial-gradient(ellipse at 50% 0%,#6f55251c,transparent 65%)}
+.kicker{font-size:10px;letter-spacing:5px;color:var(--gold);text-transform:uppercase}
+h1{font:700 clamp(42px,8vw,82px)/1.05 Cinzel,serif;letter-spacing:3px;margin:18px 0 12px}
+.subtitle{color:var(--muted);font-size:12px;letter-spacing:3px;text-transform:uppercase}
+.rule{height:1px;width:72px;background:var(--gold);margin:28px auto}
+.identity{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:0 auto 34px}
+.pill{border:1px solid #d4b47755;background:#d4b4770b;padding:10px 15px;font-size:11px;letter-spacing:1px;color:#e8dfce}
+.pill strong{color:var(--gold2);font-weight:800}
+.notice{max-width:760px;margin:0 auto 54px;padding:19px 22px;border:1px solid #b64d454f;background:linear-gradient(90deg,#6e211a22,#1b1110);display:flex;gap:15px;align-items:center;text-align:left}
+.notice-icon{font-size:23px}.notice b{display:block;color:#f0b1a8;font-size:12px;letter-spacing:1.5px;margin-bottom:5px}.notice span{font-size:12px;color:#c7b6b0;line-height:1.6}
+main{max-width:1120px;margin:auto;padding:0 7% 90px}
+.section-head{text-align:center;margin-bottom:28px}.section-head h2{font:600 28px Cinzel,serif;margin:0 0 9px}.section-head p{color:var(--muted);font-size:12px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.reward{background:linear-gradient(145deg,#171a1c,#101214);border:1px solid var(--line);padding:23px;display:flex;align-items:center;gap:17px;min-height:118px;transition:.2s}
+.reward:hover{border-color:#d4b47788;transform:translateY(-2px)}
+.num{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border:1px solid #d4b47766;color:var(--gold);font:600 18px Cinzel}
+.details{flex:1}.details h3{font-size:13px;line-height:1.5;margin:0 0 7px;font-weight:600}.details p{font-size:10px;color:var(--muted);margin:0;letter-spacing:.5px}
+.amount{white-space:nowrap;color:var(--gold2);font:700 18px Cinzel;text-align:right}.amount small{display:block;font:600 9px Manrope;color:#8e887c;letter-spacing:2px;margin-top:4px}
+.footer-note{text-align:center;color:#777;font-size:10px;letter-spacing:1px;margin-top:36px;line-height:1.8}
+footer{border-top:1px solid var(--line);padding:27px 7%;display:flex;justify-content:space-between;align-items:center;gap:18px;color:#777;font-size:10px;letter-spacing:1.5px}
+footer strong{font:700 14px Cinzel;color:var(--gold);letter-spacing:2px}
+@media(max-width:650px){header{padding:18px 6%}.top-label{font-size:8px;letter-spacing:1px}.hero{padding:62px 6% 42px}main{padding:0 6% 65px}.grid{grid-template-columns:1fr}.reward{padding:19px;gap:13px}.amount{font-size:16px}.notice{padding:16px}.section-head h2{font-size:23px}footer{flex-direction:column;text-align:center}}
+</style>
+
+<style>
+.vk-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 9999;
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #0077ff;
+  box-shadow: 0 5px 18px #0008;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.vk-float:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px #000a;
+}
+.vk-float svg { width: 29px; height: 29px; fill: #fff; }
+@media (max-width: 650px) {
+  .vk-float { right: 16px; bottom: 16px; width: 50px; height: 50px; }
+}
+</style>
+
+</head>
+<body>
+<header>
+  <div class="brand">LA COSA NOSTRA<small>ABSOLUTE RP · PLATINUM</small></div>
+  <div class="top-label">Семейная система выплат</div>
+</header>
+<section class="hero">
+  <div class="kicker">Absolute Roleplay · Platinum</div>
+  <h1>ПРЕМИИ LCN</h1>
+  <div class="subtitle">La Cosa Nostra — правила получения премий</div>
+  <div class="rule"></div>
+  <div class="identity">
+    <div class="pill">БОСС: <strong>Miko Kalashnikov</strong></div>
+    <div class="pill">ТЕЛЕФОН: <strong>8817</strong></div>
+  </div>
+  <div class="notice">
+    <div class="notice-icon">⚠️</div>
+    <div><b>ВНИМАНИЕ: ПРЕМИИ ЗАПРЕЩЕНЫ ДЛЯ 9 И 8 РАНГОВ</b><span>Участникам 9 и 8 рангов получение премий по этому списку запрещено. Остальным рангам премии доступны.</span></div>
+  </div>
+</section>
+<main>
+  <div class="section-head">
+    <h2>Список премиальных выплат</h2>
+    <p>Выплаты за выполнение указанных действий и заданий</p>
+  </div>
+  <div class="grid">
+    <article class="reward"><div class="num">01</div><div class="details"><h3>Убийство на авианосце — 1 военный</h3><p>ЗА КАЖДОГО ВОЕННОГО</p></div><div class="amount">1.000$<small>ПРЕМИЯ</small></div></article>
+    <article class="reward"><div class="num">02</div><div class="details"><h3>Убийство на бизваре — 1 мафиозника</h3><p>ЗА КАЖДОГО МАФИОЗНИКА</p></div><div class="amount">2.000$<small>ПРЕМИЯ</small></div></article>
+    <article class="reward"><div class="num">03</div><div class="details"><h3>500 металлов в склад LCN</h3><p>ПОПОЛНЕНИЕ СЕМЕЙНОГО СКЛАДА</p></div><div class="amount">10.000$<small>ПРЕМИЯ</small></div></article>
+    <article class="reward"><div class="num">04</div><div class="details"><h3>3.000 патронов в склад LCN</h3><p>ПОПОЛНЕНИЕ СЕМЕЙНОГО СКЛАДА</p></div><div class="amount">10.000$<small>ПРЕМИЯ</small></div></article>
+    <article class="reward"><div class="num">05</div><div class="details"><h3>Участие в RP-ситуациях с Якудзой</h3><p>ЗА УЧАСТИЕ В РОЛЕВОЙ СИТУАЦИИ</p></div><div class="amount">20.000$<small>ПРЕМИЯ</small></div></article>
+    <article class="reward"><div class="num">06</div><div class="details"><h3>RP-задание на тематику мафии LCN</h3><p>ЗА ВЫПОЛНЕНИЕ ЗАДАНИЯ</p></div><div class="amount">10.000$<small>ПРЕМИЯ</small></div></article>
+  </div>
+  <div class="footer-note">Соблюдайте правила семьи и подтверждайте выполнение заданий руководству.<br>La Cosa Nostra · Family Honor · Respect</div>
+</main>
+<footer><strong>LCN · PLATINUM</strong><span>Босс: Miko Kalashnikov</span><span>Телефон: 8817</span></footer>
+<a class="vk-float" href="https://vk.ru/azatshaihutdin" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">
+  <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+    <path d="M13.1 18.5h1.35s.41-.05.62-.27c.19-.2.18-.58.18-.58s-.03-1.78.8-2.04c.82-.25 1.87 1.72 2.98 2.48.84.58 1.48.45 1.48.45l2.97-.04s1.55-.1.82-1.32c-.06-.1-.42-.91-2.18-2.58-1.84-1.74-1.59-1.46.62-4.48 1.35-1.84 1.89-2.96 1.72-3.44-.16-.46-1.16-.34-1.16-.34l-3.35.02s-.25-.03-.43.08c-.18.1-.29.34-.29.34s-.53 1.42-1.24 2.63c-1.49 2.53-2.09 2.66-2.34 2.5-.57-.37-.43-1.48-.43-2.27 0-2.47.37-3.5-.72-3.77-.36-.09-.63-.15-1.56-.16-1.19-.01-2.2 0-2.77.28-.38.18-.67.58-.49.6.22.03.72.13.98.48.34.46.33 1.5.33 1.5s.2 2.87-.46 3.23c-.45.25-1.07-.26-2.4-2.55-.68-1.17-1.2-2.47-1.2-2.47s-.1-.23-.28-.35c-.22-.14-.53-.19-.53-.19l-3.18.02s-.48.01-.66.22c-.16.18-.01.55-.01.55s2.49 5.83 5.31 8.77c2.59 2.7 5.53 2.52 5.53 2.52z"/>
+  </svg>
+</a>
+
+</body>
+</html>
