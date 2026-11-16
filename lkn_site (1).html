@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090b0d">
+<title>LA COSA NOSTRA — Семья</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--gold:#c7a66a;--bg:#090b0d;--muted:#a6a29a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#f4f0e8;font-family:Manrope,Arial,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;border-bottom:1px solid #ffffff16;position:absolute;top:0;width:100%;z-index:5}
+.logo{font-family:'Cormorant Garamond',serif;font-size:25px;letter-spacing:4px;color:var(--gold);font-weight:700}.logo span{color:#eee}
+nav{display:flex;gap:32px}nav a{color:#d4d0c8;text-decoration:none;font-size:11px;letter-spacing:2px;text-transform:uppercase;transition:.2s}nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:1px solid #ffffff33;color:white;padding:8px 12px}
+.hero{min-height:760px;height:100vh;max-height:950px;display:flex;align-items:center;padding:120px 12% 80px;position:relative;overflow:hidden;background:linear-gradient(90deg,#080a0cf5 0%,#080a0cbb 48%,#080a0c55 100%),url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid #c7a66a35;border-radius:50%;right:9%;top:20%;box-shadow:0 0 0 35px #c7a66a08,0 0 0 75px #c7a66a06}
+.hero-content{position:relative;z-index:1;max-width:720px}.eyebrow{color:var(--gold);letter-spacing:5px;font-size:11px;text-transform:uppercase}
+h1{font:600 clamp(64px,10vw,130px)/.86 'Cormorant Garamond',serif;letter-spacing:2px;margin:26px 0 24px}h1 span{color:var(--gold);display:block}
+.hero p{max-width:470px;color:#c2beb5;line-height:1.8;font-size:14px}
+.actions{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}.btn{padding:15px 24px;border:1px solid var(--gold);color:#111;background:var(--gold);text-decoration:none;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase;transition:.25s}.btn:hover{background:transparent;color:var(--gold)}.btn.ghost{background:transparent;color:#eee;border-color:#ffffff55}.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+.scroll{position:absolute;bottom:32px;left:12%;font-size:9px;letter-spacing:3px;color:#aaa;text-transform:uppercase}
+section{padding:110px 12%}.section-tag{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase}.section-title{font:600 clamp(42px,6vw,68px)/1 'Cormorant Garamond',serif;margin:18px 0 24px}.intro{max-width:620px;color:var(--muted);line-height:1.9;font-size:14px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center;background:#0e1114}.seal{height:430px;border:1px solid #c7a66a55;display:grid;place-items:center;position:relative;background:radial-gradient(circle,#24221c 0,#111416 58%,#0e1114 100%)}.seal:before,.seal:after{content:"";position:absolute;inset:22px;border:1px solid #c7a66a35}.seal:after{inset:34px}.crest{font:600 110px 'Cormorant Garamond',serif;color:var(--gold);text-shadow:0 0 35px #c7a66a55}.seal small{position:absolute;bottom:62px;letter-spacing:5px;font-size:9px;color:#c7a66a}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff18;margin-top:52px;border:1px solid #ffffff18}.value{background:#0e1114;padding:32px 28px}.value b{font:600 35px 'Cormorant Garamond',serif;color:var(--gold)}.value h3{font-size:12px;letter-spacing:2px;text-transform:uppercase;margin:18px 0 10px}.value p{font-size:12px;color:var(--muted);line-height:1.8}
+.code{background:linear-gradient(110deg,#171713,#0b0e10);text-align:center}.code .section-title{max-width:650px;margin:18px auto 24px}.code p{color:var(--muted);font-size:13px;line-height:1.9;max-width:620px;margin:0 auto}.divider{width:55px;height:1px;background:var(--gold);margin:30px auto}
+footer{padding:35px 7%;display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid #ffffff18;color:#777;font-size:10px;letter-spacing:2px;text-transform:uppercase}.foot-logo{font:700 20px 'Cormorant Garamond',serif;color:var(--gold);letter-spacing:3px}
+@media(max-width:760px){header{padding:0 6%}nav{display:none;position:absolute;top:81px;left:0;right:0;background:#0b0e10;padding:24px;flex-direction:column;gap:22px;border-bottom:1px solid #ffffff22}nav.open{display:flex}.menu{display:block}.hero{padding:120px 7% 80px;min-height:700px}.hero:after{right:-300px;opacity:.5}.scroll{left:7%}section{padding:80px 7%}.about{grid-template-columns:1fr}.seal{height:300px}.values{grid-template-columns:1fr}.value{padding:26px}footer{padding:28px 7%;flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">L<span>К</span>N</div>
+  <nav id="nav"><a href="#home">Главная</a><a href="#about">О семье</a><a href="#values">Принципы</a><a href="#code">Кодекс</a></nav>
+  <button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">МЕНЮ</button>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="eyebrow">La Cosa Nostra · Roleplay family</div>
+      <h1>LA COSA<span>NOSTRA</span></h1>
+      <p>Семья — это не просто имя. Это честь, верность слову и уважение, которое подтверждается поступками.</p>
+      <div class="actions"><a class="btn" href="#about">Узнать о семье</a><a class="btn ghost" href="#code">Наш кодекс</a></div>
+    </div>
+    <div class="scroll">↓ &nbsp; Листайте вниз</div>
+  </section>
+  <section class="about" id="about">
+    <div>
+      <div class="section-tag">01 / История и наследие</div>
+      <h2 class="section-title">Сила в единстве.<br>Честь в поступках.</h2>
+      <p class="intro">La Cosa Nostra — ролевая семья в мире GTA. Здесь ценят атмосферу, продуманный отыгрыш и уважение между участниками. Каждый персонаж пишет свою историю, а общая история семьи создаётся вместе.</p>
+    </div>
+    <div class="seal"><div class="crest">L C N</div><small>FAMILY • HONOR • RESPECT</small></div>
+  </section>
+  <section id="values">
+    <div class="section-tag">02 / Наши принципы</div>
+    <h2 class="section-title">Три основы семьи</h2>
+    <div class="values">
+      <article class="value"><b>01</b><h3>Верность</h3><p>Держать слово, уважать товарищей и не подводить тех, кто рядом.</p></article>
+      <article class="value"><b>02</b><h3>Уважение</h3><p>Соблюдать правила проекта и поддерживать достойную RP-атмосферу.</p></article>
+      <article class="value"><b>03</b><h3>Дисциплина</h3><p>Быть ответственным за свои действия и вклад в общее дело.</p></article>
+    </div>
+  </section>
+  <section class="code" id="code">
+    <div class="section-tag">03 / Семейный кодекс</div>
+    <h2 class="section-title">Имя семьи —<br>это ответственность.</h2>
+    <div class="divider"></div>
+    <p>Уважай участников. Соблюдай правила сервера. Разделяй IC и OOC. Создавай интересные ситуации и помни: хорошая ролевая игра строится на взаимном уважении.</p>
+    <div class="actions" style="justify-content:center"><a class="btn" href="#home">Вернуться наверх</a></div>
+  </section>
+</main>
+<footer><div class="foot-logo">LA COSA NOSTRA</div><div>Неофициальный RP-проект · GTA Roleplay</div><div>© 2026</div></footer>
+<script>
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open')));
+</script>
+</body>
+</html>
